@@ -1,0 +1,93 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Escola Oriental
+description: >- # this means to ignore newlines until "baseurl:"
+  Site da escola de língua japonesa
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://escolaoriental.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: leafarlins
+github_username:  escolaoriental
+
+# Build settings
+markdown: kramdown
+#theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+permalink: none
+#paginate: 6
+#paginate_path: /page:num/
+
+#social
+#twitter:
+instagram: https://www.instagram.com/escolaorientalbsb/
+facebook: https://www.facebook.com/escoladejapones/
+email: escolaorientalbsb@gmail.com
+#facebook like box
+fb-like-box: yes
+fb-app-id: 1550657118496992
+fb-page-url: https://www.facebook.com/escoladejapones/
+fb-page-title: escolaoriental
+
+# Sass style
+sass:
+  style: compressed
+
+category-list:
+  jp: [地理, 日本語, 雑学,文化,日本料理,東京,神社仏閣,観光]
+  pt: [Geografia, Língua-Japonesa,Curiosidades,Comida,Cultura,Templos, Tóquio, Turismo]
+# Menus multilang
+t:
+  jp:
+    home:
+      name: "Home"
+      url: "/jp/"
+    about:
+      name: "About"
+      url: "/about/"
+    curso:
+      name: "Classes"
+      url: "/curso/"
+    contato:
+      name: "Contact"
+      url: "/contact/"
+  pt:
+    home:
+      name: "Início"
+      url: "/"
+    about:
+      name: "Sobre"
+      url: "/sobre/"
+    curso:
+      name: "Curso"
+      url: "/curso/"
+    contato:
+      name: "Contato"
+      url: "/contato/"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

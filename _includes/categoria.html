@@ -1,0 +1,9 @@
+<div class="row pack">
+    {% assign tiposts = site.posts | where: "categories", page.pagecat %}
+    <div class="col-md-12 card">
+        <h1 align="center">Categoria: {{page.pagecat}}</h1>
+    </div>
+    {% for post in tiposts %}
+        {% include postq.html %}
+    {% endfor %}
+</div>

@@ -1,0 +1,18 @@
+<div class="row pack">
+
+  {% assign langposts = site.posts | where: "lang", page.lang %}
+  {% for cat in site.category-list[page.lang] %}
+    {% assign tiposts = langposts | where: "categories", cat %}
+
+      <div class="col-md-12 card">
+          <h1 align="center">{{ cat }}</h1>
+      </div>
+
+      {% for post in tiposts %}
+          {% include postq.html %}
+      {% endfor %}
+
+  {% endfor %}
+
+
+</div>

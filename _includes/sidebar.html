@@ -1,0 +1,28 @@
+<div class="col-md-4 mt20">
+
+
+        <div class="mt10 recent">
+            <h3>{{ site.data.translations['recentPosts'][page.lang] }}:</h3>
+             <ul>
+               {% assign recent=site.posts | where:"lang", page.lang %}
+               {% if recent.size > 0 %}
+
+                {% for post in recent limit:10 %}
+
+                      <li>
+                      <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><small>&nbsp;&nbsp;{{ post.date | date_to_string }}</small></p>
+                      </li>
+
+                {% endfor %}
+                {% endif %}
+              </ul>
+
+        </div>
+        {% if site.fb-like-box %}
+        <div class="mt10">
+            <div class="fb-page" data-href="https://www.facebook.com/escoladejapones/" data-width="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/escoladejapones/" class="fb-xfbml-parse-ignore"><a href="{{site.fb-page-url}}">{{site.fb-page-title}}</a></blockquote></div>
+        </div>
+        {% endif %}
+        <br>
+
+</div>
