@@ -5,7 +5,7 @@ date:  2017-07-08 20:00:00 -0300
 img: pq-o-templo-historico-sensou-ji.png
 lang: pt
 lang-ref: o-templo-historico-sensou-ji
-categories: Templos, Tóquio, Turismo
+categories: [Templos, Tóquio, Turismo]
 ---
 
 Boa tarde a todos. Tudo bem?

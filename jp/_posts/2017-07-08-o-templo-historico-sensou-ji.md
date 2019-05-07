@@ -5,7 +5,7 @@ date:  2017-07-08 20:00:00 -0300
 img: pq-o-templo-historico-sensou-ji.png
 lang: jp
 lang-ref: o-templo-historico-sensou-ji
-categories: 東京,神社仏閣,観光
+categories: [東京,神社仏閣,観光]
 ---
 
 こんにちは。今日は台東区の浅草にある東京で最も歴史のある寺、浅草寺について話したいと思います。
