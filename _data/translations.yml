@@ -1,14 +1,17 @@
 relatedPosts:
   jp: "Related Posts"
   pt: "Artigos relacionados"
+idiomas:
+  jp: "Language"
+  pt: "Idiomas"
 differentLanguage:
   jp: "Read this page in a different language"
-  pt: "Leia esta página em outra língua"
+  pt: "Página disponível nos idiomas"
 recentPosts:
   jp: "Recent Posts"
   pt: "Artigos Recentes"
 categories:
-  jp: "Categories"
+  jp: "カテゴリー"
   pt: "Categorias"
 sobre:
   jp: "About"
@@ -16,12 +19,3 @@ sobre:
 contact:
   jp: "Contact"
   pt: "Contato"
-catGeografia:
-  jp: "地理"
-  pt: "Geografia"
-catJapones:
-  jp: "日本語"
-  pt: "Língua-Japonesa"
-catCuriosidades:
-  pt: Curiosidades
-  jp: 雑学

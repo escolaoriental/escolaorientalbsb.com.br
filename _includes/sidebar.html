@@ -2,6 +2,22 @@
 
 
         <div class="mt10 recent">
+
+                 {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+                 {% if posts.size == 0 %}
+                   {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+               {% endif %}
+               {% if posts.size > 1 %}
+
+                 <h3>{{ site.data.translations['idiomas'][page.lang] }}:</h3>
+               <ul><p>{{ site.data.translations['differentLanguage'][page.lang] }}:
+               {% for post in posts %}
+               <br/><li><a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }} title="View in {{page.lang}}">{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}</a></li>
+               {% endfor %}
+               {% endif %}
+               </p></ul>
+
+
             <h3>{{ site.data.translations['recentPosts'][page.lang] }}:</h3>
              <ul>
                {% assign recent=site.posts | where:"lang", page.lang %}
@@ -10,7 +26,7 @@
                 {% for post in recent limit:10 %}
 
                       <li>
-                      <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><small>&nbsp;&nbsp;{{ post.date | date_to_string }}</small></p>
+                      <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a><br/><small>{{ post.date | date_to_string }}</small></p>
                       </li>
 
                 {% endfor %}

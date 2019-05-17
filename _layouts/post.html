@@ -44,21 +44,8 @@ layout: default
    </p>
 
 
-   <div class="row">
-     {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-     {% if posts.size == 0 %}
-       {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-   {% endif %}
-   {% if posts.size > 1 %}
-   <p>{{ site.data.translations['differentLanguage'][page.lang] }}:
-   {% for post in posts %}
-   &nbsp;<a href="{{ site.base-url }}{{ post.url }}" class="{{ post.lang }} title="View in {{page.lang}}">{{ site.data.languages[post.lang].icon }} {{ site.data.languages[post.lang].label }}</a>
-   {% endfor %}
-   {% endif %}
-   </p>
-   </div>
 
-    <div class="row">
+    <!--<div class="row">
             <ul class="pager">
              {% if page.next.url %}
                     <li><a class="next" href="{{page.next.url | prepend: site.baseurl}}">&laquo; {{page.next.title}}</a></li>
@@ -67,7 +54,7 @@ layout: default
                 <li><a class="previous" href="{{page.previous.url | prepend: site.baseurl}}">{{page.previous.title}} &raquo;</a></li>
               {% endif %}
             </ul>
-    </div>
+    </div>-->
 </div>
 
 
